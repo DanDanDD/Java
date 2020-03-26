@@ -4,22 +4,21 @@ package thread;
  * @author: Dennis
  * @date: 2020/3/24 18:04
  */
-
+// 继承 Thread 类，覆写 run（）方法，创建线程对象，调用 start（）开启线程
 public class Thread_class extends Thread{
     @Override
     public void run() {
-        // run 方法线程体
-        for (int i = 0; i < 100; i++) {
-            System.out.println("我在学习Java——————"+i);
+        for (int i = 0; i < 200; i++) {
+            System.out.println("我在学习多线程"+i);
         }
     }
 
     public static void main(String[] args) {
-        // main 线程  主线程
+        new Thread_class().start();
+
         for (int i = 0; i < 1000; i++) {
-            System.out.println("我在吃饭——————"+i);
+            System.out.println("我在睡觉————"+i);
         }
-        Thread_class thread = new Thread_class();
-        thread.start();
+
     }
 }
