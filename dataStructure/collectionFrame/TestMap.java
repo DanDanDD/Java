@@ -35,6 +35,8 @@ public class TestMap {
         System.out.println("获取所有的 value：" + map.values());
         System.out.println("判断key=7是否存在"+ map.containsKey(7));
 
+        System.out.println("删除key=7的元素："+ map.remove(7));
+
         System.out.println("Map 的遍历：");
         // 1.key -> value
         // 2.values(无法获取到key)
@@ -44,7 +46,7 @@ public class TestMap {
         for (Integer key : map.keySet()){
             System.out.printf("%d=%s \n",key,map.get(key));
         }
-
+        System.out.println("----------------");
         // 3.entryset [key-value,,,]
         for (Map.Entry<Integer,String> entry : map.entrySet()){
             Integer key = entry.getKey();
