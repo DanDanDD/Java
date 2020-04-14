@@ -47,6 +47,7 @@ public class TestMap {
             System.out.printf("%d=%s \n",key,map.get(key));
         }
         System.out.println("----------------");
+
         // 3.entryset [key-value,,,]
         for (Map.Entry<Integer,String> entry : map.entrySet()){
             Integer key = entry.getKey();
@@ -55,6 +56,7 @@ public class TestMap {
         }
         System.out.println("----------------");
 
+        //利用迭代器 遍历
         Iterator<Integer> iterator = map.keySet().iterator();
         while (iterator.hasNext()){
             Integer key = iterator.next();
