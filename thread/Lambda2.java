@@ -4,8 +4,8 @@ package thread;
  * @author: Dennis
  * @date: 2020/3/26 9:30
  */
-interface Love{
-    void love(int a,int b,int c);
+interface Love {
+    void love(int a, int b, int c);
 }
 
 public class Lambda2 {
@@ -28,13 +28,13 @@ public class Lambda2 {
         //简化 -- 去掉花括号
         //love = (a) -> System.out.println("i love you--"+a);
 
-        love = (a,b,c) -> {
-            System.out.println("i love you--"+a);
-            System.out.println("i love you--"+b);
-            System.out.println("i love you--"+c);
+        love = (a, b, c) -> {
+            System.out.println("i love you--" + a);
+            System.out.println("i love you--" + b);
+            System.out.println("i love you--" + c);
         };
 
-        love.love(520,521,522);
+        love.love(520, 521, 522);
     }
 /*
 总结： lambda 表达式只能有一行代码的时候才可简化成一行，如果有多行用代码块包裹

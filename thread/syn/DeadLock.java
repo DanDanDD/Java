@@ -7,8 +7,8 @@ package thread.syn;
 // 多个线程互相抱着对方需要的资源，然后形成僵持
 public class DeadLock {
     public static void main(String[] args) {
-        Makeup g1 = new Makeup(0,"灰姑娘");
-        Makeup g2 = new Makeup(1,"白雪公主");
+        Makeup g1 = new Makeup(0, "灰姑娘");
+        Makeup g2 = new Makeup(1, "白雪公主");
 
         new Thread(g1).start();
         new Thread(g2).start();
@@ -16,15 +16,15 @@ public class DeadLock {
 }
 
 // 口红
-class Lipstick{
+class Lipstick {
 }
 
 //镜子
-class Mirror{
+class Mirror {
 
 }
 
-class Makeup implements Runnable{
+class Makeup implements Runnable {
     //需要获取的资源只有一份，使用 static 来保证
     static Lipstick lipstick = new Lipstick();
     static Mirror mirror = new Mirror();
@@ -32,7 +32,7 @@ class Makeup implements Runnable{
     int choice;
     String girlName;
 
-    Makeup(int choice, String girlName){
+    Makeup(int choice, String girlName) {
         this.choice = choice;
         this.girlName = girlName;
     }
@@ -43,10 +43,10 @@ class Makeup implements Runnable{
         makeup();
     }
 
-// 化妆，互相持有对方的锁，拿到对方的资源
-    private void makeup(){
-        if (choice == 0){
-            synchronized (lipstick){
+    // 化妆，互相持有对方的锁，拿到对方的资源
+    private void makeup() {
+        if (choice == 0) {
+            synchronized (lipstick) {
                 //  获得口红的锁
                 System.out.println(this.girlName + "获得口红的锁");
                 try {
@@ -55,11 +55,11 @@ class Makeup implements Runnable{
                     e.printStackTrace();
                 }
             }
-            synchronized (mirror){
+            synchronized (mirror) {
                 System.out.println(this.girlName + "获得镜子的锁");
             }
-        }else{
-            synchronized (mirror){
+        } else {
+            synchronized (mirror) {
                 //  获得口红的锁
                 System.out.println(this.girlName + "获得镜子的锁");
                 try {
@@ -68,7 +68,7 @@ class Makeup implements Runnable{
                     e.printStackTrace();
                 }
             }
-            synchronized (lipstick){
+            synchronized (lipstick) {
                 System.out.println(this.girlName + "获得口红的锁");
             }
         }

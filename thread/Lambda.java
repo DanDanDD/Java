@@ -6,12 +6,12 @@ package thread;
  */
 
 // 1、定义一个函数式接口
-interface ILike{
+interface ILike {
     void lambda();
 }
 
 // 2、实现类
-class Like implements ILike{
+class Like implements ILike {
     @Override
     public void lambda() {
         System.out.println("i like lambda1");
@@ -28,7 +28,7 @@ public class Lambda {
 
 
         // 3.局部内部类
-        class Like3 implements ILike{
+        class Like3 implements ILike {
             @Override
             public void lambda() {
                 System.out.println("i like lambda2");
@@ -47,7 +47,7 @@ public class Lambda {
         like.lambda();
 
         // 5、 用 Lambda 简化
-        like = () ->{
+        like = () -> {
             System.out.println("i like lambda4");
         };
         like.lambda();

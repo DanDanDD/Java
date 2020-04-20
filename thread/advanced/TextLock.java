@@ -18,7 +18,7 @@ public class TextLock {
 
 }
 
-class TextLock2 implements Runnable{
+class TextLock2 implements Runnable {
     int ticketNums = 10;
 
     // 定义 lock 锁
@@ -26,20 +26,20 @@ class TextLock2 implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             lock.lock();   // 加锁
-            try{
-                if (ticketNums > 0 ){
+            try {
+                if (ticketNums > 0) {
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                     System.out.println(ticketNums--);
-                }else {
+                } else {
                     break;
                 }
-            }finally {
+            } finally {
                 lock.unlock();
             }
         }

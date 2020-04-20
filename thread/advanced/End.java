@@ -8,7 +8,7 @@ package thread.advanced;
 public class End {
 }
 
-class MyThread1 extends Thread{
+class MyThread1 extends Thread {
     @Override
     public void run() {
         System.out.println("MyThread1");

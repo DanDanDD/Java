@@ -15,10 +15,10 @@ public class TestPC {
 }
 
 // 生产者
-class Productor extends Thread{
+class Productor extends Thread {
     SynContainer container;
 
-    public Productor(SynContainer container){
+    public Productor(SynContainer container) {
         this.container = container;
     }
 
@@ -35,10 +35,10 @@ class Productor extends Thread{
 
 
 // 消费者
-class Consumer extends Thread{
+class Consumer extends Thread {
     SynContainer container;
 
-    public Consumer(SynContainer container){
+    public Consumer(SynContainer container) {
         this.container = container;
     }
 
@@ -52,7 +52,7 @@ class Consumer extends Thread{
 }
 
 // 产品
-class Chicken{
+class Chicken {
     int id;
 
     public Chicken(int id) {
@@ -62,14 +62,15 @@ class Chicken{
 
 
 // 缓冲区
-class SynContainer{
+class SynContainer {
     // 需要容器大小
     Chicken[] chickens = new Chicken[10];
     // 容器计数器
     int count = 0;
+
     // 生产者放入产品
-    public synchronized void push(Chicken chicken){
-        if (count == chickens.length){
+    public synchronized void push(Chicken chicken) {
+        if (count == chickens.length) {
             // 生产者等待
             try {
                 this.wait();
@@ -87,9 +88,9 @@ class SynContainer{
     }
 
     // 消费者消费产品
-    public synchronized Chicken pop(){
+    public synchronized Chicken pop() {
         // 判断能否消费
-        if (count == 0){
+        if (count == 0) {
             // 消费者等待
             try {
                 this.wait();
@@ -106,7 +107,6 @@ class SynContainer{
         this.notifyAll();
         return chicken;
     }
-
 
 
 }
