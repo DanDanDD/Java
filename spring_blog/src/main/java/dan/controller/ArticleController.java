@@ -72,7 +72,7 @@ public class ArticleController {
      * @return
      */
     @RequestMapping("/writer/forward/{type}/{id}/editor")
-    public String editorAdd(@PathVariable("type") Long type,
+    public String editorAdd(@PathVariable("type") Integer type,
                             @PathVariable("id") Long id, Model model){
         Category category;
         if(type == 1){ // 完成editor 页面新增的属性设置
@@ -93,16 +93,16 @@ public class ArticleController {
     }
 
     /**
-     *
+     *文章新增/修改操作
      * @param type  新增为1 ， 修改为2
      * @param id    新增时为 categoryId ，修改时为 activeCid
-     * @param article 腹部的文章信息
+     * @param article 发布的文章信息
      * @return
      */
     @RequestMapping(value = "/writer/article/{type}/{id}", method = RequestMethod.POST)
-    public String publish(@PathVariable("type") Long type,
+    public String publish(@PathVariable("type") Integer type,
                           @PathVariable("id") Integer id, Article article,
-                          HttpSession session, Model model){
+                          HttpSession session){
 
         article.setUpdatedAt(new Date());
         if (type == 1){ //新增的时候，插入文章数据
