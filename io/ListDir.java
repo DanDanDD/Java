@@ -11,12 +11,12 @@ import java.io.IOException;
 
 // 遍历目录下的所有文件，得到文件路径和大小
 public class ListDir {
-    public static void listDir(File dir){
+    public static void listDir(File dir) {
         File[] files = dir.listFiles();
-        for (File file : files){
-            if (file.isDirectory()){
+        for (File file : files) {
+            if (file.isDirectory()) {
                 listDir(file);
-            }else {
+            } else {
                 System.out.println(file.getAbsolutePath() + ":" + file.length());
             }
 

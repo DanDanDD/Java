@@ -16,7 +16,7 @@ public class Stream_Out {
         file.createNewFile();
 
         OutputStream outputStream = new FileOutputStream(file);
-        byte [] buffer = "我是中国人".getBytes("UTF-8");
+        byte[] buffer = "我是中国人".getBytes("UTF-8");
         outputStream.write(buffer);
     }
 }

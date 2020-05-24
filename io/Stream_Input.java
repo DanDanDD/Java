@@ -24,7 +24,7 @@ public class Stream_Input {
         byte[] buf = new byte[1024];
         int len = inputStream.read(buf);
         System.out.println(len);
-        String s = new String(buf,"UTF-8");
+        String s = new String(buf, "UTF-8");
         System.out.println(s);
     }
 }
