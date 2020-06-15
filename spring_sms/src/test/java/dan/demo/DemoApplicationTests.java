@@ -1,5 +1,6 @@
 package dan.demo;
 
+import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonRequest;
 import com.aliyuncs.CommonResponse;
 import com.aliyuncs.DefaultAcsClient;
@@ -11,13 +12,15 @@ import com.aliyuncs.profile.DefaultProfile;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.HashMap;
+
 @SpringBootTest
 class DemoApplicationTests {
 
     @Test
     void contextLoads() {
             // 连接阿里云
-            DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G1XM7DyqGDWDPdeKcWF", "yyoPCVGWw3TisU2EZ6uapDqlJOY4vY\n");
+            DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G1XM7DyqGDWDPdeKcWF", "yyoPCVGWw3TisU2EZ6uapDqlJOY4vY");
             IAcsClient client = new DefaultAcsClient(profile);
             // 构建请求
             CommonRequest request = new CommonRequest();
@@ -28,9 +31,14 @@ class DemoApplicationTests {
             request.setSysAction("SendSms");
 
             // 自定义参数 (手机号，验证码，签名，模板)
-        request.putQueryParameter("phoneNumbers", "cn-hangzhou");
-        request.putQueryParameter("${code}", "cn-hangzhou");
-        request.putQueryParameter("", "cn-hangzhou");
+        request.putQueryParameter("PhoneNumbers", "13359253786");
+        request.putQueryParameter("SignName", "氮蛋的云图库");
+        request.putQueryParameter("TemplateCode", "SMS_193235473");
+
+        // 构建一个短信验证码
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("code",5201314);
+        request.putQueryParameter("TemplateParam", JSONObject.toJSONString(map));
 
 
         try {
