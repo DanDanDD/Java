@@ -20,7 +20,7 @@ class DemoApplicationTests {
     @Test
     void contextLoads() {
             // 连接阿里云
-            DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G1XM7DyqGDWDPdeKcWF", "yyoPCVGWw3TisU2EZ6uapDqlJOY4vY");
+            DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G1XM7DyqGDWDPdeKcWF", "yyo");
             IAcsClient client = new DefaultAcsClient(profile);
             // 构建请求
             CommonRequest request = new CommonRequest();
@@ -31,7 +31,7 @@ class DemoApplicationTests {
             request.setSysAction("SendSms");
 
             // 自定义参数 (手机号，验证码，签名，模板)
-        request.putQueryParameter("PhoneNumbers", "13359253786");
+        request.putQueryParameter("PhoneNumbers", "133592");
         request.putQueryParameter("SignName", "氮蛋的云图库");
         request.putQueryParameter("TemplateCode", "SMS_193235473");
 
