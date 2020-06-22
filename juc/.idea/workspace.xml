@@ -41,7 +41,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
-  <component name="RunManager" selected="Application.SemaphoreDemo">
+  <component name="RunManager" selected="Application.ReadWriteLockDemo">
     <configuration name="CallableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CallableTest" />
       <module name="juc" />
@@ -68,12 +68,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.unsafe.MapTest" />
+    <configuration name="CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.add.CyclicBarrierDemo" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.unsafe.*" />
+          <option name="PATTERN" value="com.add.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadWriteLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rw.ReadWriteLockDemo" />
+      <module name="juc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,26 +107,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.unsafe.SetTest" />
-      <module name="juc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.unsafe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadWriteLockDemo" />
+        <item itemvalue="Application.CyclicBarrierDemo" />
         <item itemvalue="Application.SemaphoreDemo" />
         <item itemvalue="Application.CountDownLatchDemo" />
         <item itemvalue="Application.CallableTest" />
-        <item itemvalue="Application.MapTest" />
-        <item itemvalue="Application.SetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +132,7 @@
       <updated>1592531559823</updated>
       <workItem from="1592531563449" duration="14679000" />
       <workItem from="1592617286335" duration="11200000" />
+      <workItem from="1592794053481" duration="4708000" />
     </task>
     <servers />
   </component>
@@ -151,30 +152,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="894" y="185" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1592619615199" />
-    <state width="706" height="212" key="GridCell.Tab.0.bottom" timestamp="1592649343491">
+    <state width="706" height="212" key="GridCell.Tab.0.bottom" timestamp="1592833280052">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592649343491" />
-    <state width="706" height="212" key="GridCell.Tab.0.center" timestamp="1592649343490">
+    <state width="706" height="212" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592833280052" />
+    <state width="706" height="212" key="GridCell.Tab.0.center" timestamp="1592833280052">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592649343490" />
-    <state width="706" height="212" key="GridCell.Tab.0.left" timestamp="1592649343490">
+    <state width="706" height="212" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592833280052" />
+    <state width="706" height="212" key="GridCell.Tab.0.left" timestamp="1592833280052">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592649343490" />
-    <state width="706" height="212" key="GridCell.Tab.0.right" timestamp="1592649343490">
+    <state width="706" height="212" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592833280052" />
+    <state width="706" height="212" key="GridCell.Tab.0.right" timestamp="1592833280052">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592649343490" />
+    <state width="706" height="212" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592833280052" />
     <state x="485" y="98" key="SettingsEditor" timestamp="1592536290329">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="485" y="98" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1592536290329" />
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1592617285969">
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1592794053333">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592617285969" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592794053333" />
     <state x="821" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1592646886327">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

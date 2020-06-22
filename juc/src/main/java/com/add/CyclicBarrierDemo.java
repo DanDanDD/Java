@@ -1,5 +1,7 @@
 package com.add;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
@@ -17,7 +19,8 @@ public class CyclicBarrierDemo {
             System.out.println("召唤神龙成功");
         });
 
-        for (int i = 0; i <= 7; i++) {
+
+        for (int i = 1; i <= 7; i++) {
             final int temp = i;
             // lambda 能操作到 i 吗
             new Thread(()->{
