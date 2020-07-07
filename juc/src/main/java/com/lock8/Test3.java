@@ -44,6 +44,7 @@ class Phone3{
         }
         System.out.println("发短信");
     }
+
     public static synchronized void call(){
         System.out.println("打电话");
     }

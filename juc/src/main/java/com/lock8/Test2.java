@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 /*
 8锁 就是关于锁的8个问题
 3、两个线程先打印  发短信还是 hello？   （hello）
-4、两个对象，两个同步方法   发短信还是打电话
+4、两个对象，两个同步方法   发短信还是打电话  (打电话)
  */
 public class Test2 {
     public static void main(String[] args) {
@@ -49,7 +49,8 @@ class Phone2{
     public synchronized void call(){
         System.out.println("打电话");
     }
-    // 这里没有锁！不是同步方法，不受锁的影响
+
+    // 这里锁没有锁！不是同步方法，不受的影响
     public void hello(){
         System.out.println("hello");
     }

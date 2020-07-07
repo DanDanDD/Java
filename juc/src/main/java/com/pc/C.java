@@ -59,6 +59,7 @@ class Data3{  // 资源类Lock
             lock.unlock();
         }
     }
+
     public void printB(){
         lock.lock();
         try {
@@ -76,6 +77,7 @@ class Data3{  // 资源类Lock
             lock.unlock();
         }
     }
+
     public void printC(){
         lock.lock();
         try {
