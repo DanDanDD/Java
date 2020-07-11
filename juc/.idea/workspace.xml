@@ -34,20 +34,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="E:/Git仓库/Java/spring_blog" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.add.CountDownLatchDemo" />
+  <component name="RunManager" selected="Application.JMMDemo">
+    <configuration name="Demo1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.future.Demo1" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.add.*" />
+          <option name="PATTERN" value="com.future.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.add.CyclicBarrierDemo" />
+    <configuration name="Demo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.function.Demo4" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.add.*" />
+          <option name="PATTERN" value="com.function.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadWriteLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rw.ReadWriteLockDemo" />
+    <configuration name="JMMDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.volatile_test.JMMDemo" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rw.*" />
+          <option name="PATTERN" value="com.volatile_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemaphoreDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.add.SemaphoreDemo" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.forkjoin.Test" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.add.*" />
+          <option name="PATTERN" value="com.forkjoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,11 +96,11 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bq.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.stream.Test" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bq.*" />
+          <option name="PATTERN" value="com.stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JMMDemo" />
+        <item itemvalue="Application.Demo1 (1)" />
+        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ReadWriteLockDemo" />
-        <item itemvalue="Application.CyclicBarrierDemo" />
-        <item itemvalue="Application.SemaphoreDemo" />
-        <item itemvalue="Application.CountDownLatchDemo" />
+        <item itemvalue="Application.Demo4" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +134,16 @@
       <workItem from="1592531563449" duration="14679000" />
       <workItem from="1592617286335" duration="11200000" />
       <workItem from="1592794053481" duration="4708000" />
-      <workItem from="1592962699255" duration="4154000" />
+      <workItem from="1592962699255" duration="4754000" />
+      <workItem from="1593049950960" duration="4421000" />
+      <workItem from="1593231318212" duration="3620000" />
+      <workItem from="1593909517653" duration="2912000" />
+      <workItem from="1594004948501" duration="10925000" />
+      <workItem from="1594107017612" duration="11144000" />
+      <workItem from="1594175162192" duration="1949000" />
+      <workItem from="1594190528363" duration="5289000" />
+      <workItem from="1594203065957" duration="8965000" />
+      <workItem from="1594263420978" duration="12654000" />
     </task>
     <servers />
   </component>
@@ -141,45 +151,61 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="722" y="94" key="#Inspections" timestamp="1594197480150">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="722" y="94" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1594197480150" />
     <state x="722" y="94" key="#Project_Structure" timestamp="1592533025991">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="722" y="94" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1592533025991" />
-    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1592625423499">
+    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1594265709194">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1592625423499" />
+    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1594265709194" />
     <state x="894" y="185" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1592619615199">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="894" y="185" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1592619615199" />
-    <state width="706" height="212" key="GridCell.Tab.0.bottom" timestamp="1592994074143">
+    <state x="959" y="190" key="FileChooserDialogImpl" timestamp="1594210702171">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1592994074143" />
-    <state width="706" height="212" key="GridCell.Tab.0.center" timestamp="1592994074143">
+    <state x="959" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1594210702171" />
+    <state width="666" height="208" key="GridCell.Tab.0.bottom" timestamp="1594325605043">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1592994074143" />
-    <state width="706" height="212" key="GridCell.Tab.0.left" timestamp="1592994074143">
+    <state width="666" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
+    <state width="666" height="208" key="GridCell.Tab.0.center" timestamp="1594325605043">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1592994074143" />
-    <state width="706" height="212" key="GridCell.Tab.0.right" timestamp="1592994074143">
+    <state width="666" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
+    <state width="666" height="208" key="GridCell.Tab.0.left" timestamp="1594325605043">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="706" height="212" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1592994074143" />
-    <state x="485" y="98" key="SettingsEditor" timestamp="1592536290329">
+    <state width="666" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
+    <state width="666" height="208" key="GridCell.Tab.0.right" timestamp="1594325605043">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="485" y="98" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1592536290329" />
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1592962698959">
+    <state width="666" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
+    <state x="536" y="87" key="Maven.ArtifactSearchDialog" timestamp="1594210937923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1592962698959" />
-    <state x="821" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1592646886327">
+    <state x="536" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1594210937923" />
+    <state x="485" y="98" key="SettingsEditor" timestamp="1594210629337">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="821" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1592646886327" />
+    <state x="485" y="98" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1594210629337" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1594263519488">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1594263519488" />
+    <state x="835" y="199" key="run.anything.popup" timestamp="1594181575072">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="835" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1594181575072" />
+    <state x="821" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1594285270670">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="821" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1594285270670" />
   </component>
 </project>
