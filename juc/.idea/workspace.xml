@@ -42,13 +42,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.JMMDemo">
-    <configuration name="Demo1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.future.Demo1" />
+  <component name="RunManager" selected="Application.CASDemo">
+    <configuration name="CASDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cas.CASDemo" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.future.*" />
+          <option name="PATTERN" value="com.cas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.function.Demo4" />
+    <configuration name="LazyMan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.single.LazyMan" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.function.*" />
+          <option name="PATTERN" value="com.single.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,8 +69,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JMMDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.volatile_test.JMMDemo" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
+      <module name="juc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.single.Test" />
+      <module name="juc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.single.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolatileDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.volatile_test.VolatileDemo1" />
       <module name="juc" />
       <extension name="coverage">
         <pattern>
@@ -82,39 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.forkjoin.Test" />
-      <module name="juc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.forkjoin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stream.Test" />
-      <module name="juc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JMMDemo" />
-        <item itemvalue="Application.Demo1 (1)" />
-        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.CASDemo" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Demo4" />
+        <item itemvalue="Application.LazyMan" />
+        <item itemvalue="Application.VolatileDemo1" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +144,9 @@
       <workItem from="1594190528363" duration="5289000" />
       <workItem from="1594203065957" duration="8965000" />
       <workItem from="1594263420978" duration="12654000" />
+      <workItem from="1594433570386" duration="4777000" />
+      <workItem from="1594515934058" duration="5103000" />
+      <workItem from="1594607639250" duration="9035000" />
     </task>
     <servers />
   </component>
@@ -159,10 +162,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="722" y="94" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1592533025991" />
-    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1594265709194">
+    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1594636132636">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1594265709194" />
+    <state x="978" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1594636132636" />
     <state x="894" y="185" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1592619615199">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -171,22 +174,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="959" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1594210702171" />
-    <state width="666" height="208" key="GridCell.Tab.0.bottom" timestamp="1594325605043">
+    <state width="1491" height="268" key="GridCell.Tab.0.bottom" timestamp="1594656330061">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="666" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
-    <state width="666" height="208" key="GridCell.Tab.0.center" timestamp="1594325605043">
+    <state width="1491" height="268" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.0.center" timestamp="1594656330061">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="666" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
-    <state width="666" height="208" key="GridCell.Tab.0.left" timestamp="1594325605043">
+    <state width="1491" height="268" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.0.left" timestamp="1594656330061">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="666" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
-    <state width="666" height="208" key="GridCell.Tab.0.right" timestamp="1594325605043">
+    <state width="1491" height="268" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.0.right" timestamp="1594656330061">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="666" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594325605043" />
+    <state width="1491" height="268" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.1.bottom" timestamp="1594656330061">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="268" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.1.center" timestamp="1594656330061">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="268" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.1.left" timestamp="1594656330061">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="268" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
+    <state width="1491" height="268" key="GridCell.Tab.1.right" timestamp="1594656330061">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="268" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1594656330061" />
     <state x="536" y="87" key="Maven.ArtifactSearchDialog" timestamp="1594210937923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -195,17 +214,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="485" y="98" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1594210629337" />
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1594263519488">
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1594607639256">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1594263519488" />
+    <state x="461" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1594607639256" />
     <state x="835" y="199" key="run.anything.popup" timestamp="1594181575072">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="835" y="199" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1594181575072" />
-    <state x="821" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1594285270670">
+    <state x="822" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1594534557448">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="821" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1594285270670" />
+    <state x="822" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1594534557448" />
   </component>
 </project>
