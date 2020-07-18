@@ -6,6 +6,7 @@ import java.util.*;
  * @author: Dennis
  * @date: 2020/7/17 22:08
  */
+// 判断是否有重复的数，三种实现方式
 //class Solution1 {
 //    public boolean containsDuplicate(int[] nums) {
 //        for (int i = 0; i < nums.length; i++) {
