@@ -31,12 +31,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java程序" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.alibabacloud.intellij.config.RegionConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ContainsDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.ContainsDuplicate" />
       <module name="LeetCode_1" />
@@ -50,8 +50,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="LeetCode_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inner_class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inner_class" />
+      <module name="LeetCode_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.inner_class" />
         <item itemvalue="Application.ContainsDuplicate" />
       </list>
     </recent_temporary>
@@ -69,7 +85,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594979535101</updated>
-      <workItem from="1594979538279" duration="9120000" />
+      <workItem from="1594979538279" duration="9818000" />
+      <workItem from="1595067168278" duration="2341000" />
+      <workItem from="1595223135767" duration="1466000" />
+      <workItem from="1595403186489" duration="8620000" />
+      <workItem from="1595421124775" duration="149000" />
+      <workItem from="1595469311362" duration="3628000" />
     </task>
     <servers />
   </component>
@@ -81,21 +102,25 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="866" y="191" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1594982598036" />
-    <state width="860" height="213" key="GridCell.Tab.0.bottom" timestamp="1594999139151">
+    <state width="730" height="213" key="GridCell.Tab.0.bottom" timestamp="1595420626166">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="860" height="213" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594999139151" />
-    <state width="860" height="213" key="GridCell.Tab.0.center" timestamp="1594999139151">
+    <state width="730" height="213" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595420626166" />
+    <state width="730" height="213" key="GridCell.Tab.0.center" timestamp="1595420626166">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="860" height="213" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594999139151" />
-    <state width="860" height="213" key="GridCell.Tab.0.left" timestamp="1594999139151">
+    <state width="730" height="213" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595420626166" />
+    <state width="730" height="213" key="GridCell.Tab.0.left" timestamp="1595420626166">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="860" height="213" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594999139151" />
-    <state width="860" height="213" key="GridCell.Tab.0.right" timestamp="1594999139151">
+    <state width="730" height="213" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595420626166" />
+    <state width="730" height="213" key="GridCell.Tab.0.right" timestamp="1595420626166">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="860" height="213" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594999139151" />
+    <state width="730" height="213" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595420626166" />
+    <state x="838" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1595469321523">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="838" y="284" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1595469321523" />
   </component>
 </project>
