@@ -1,6 +1,5 @@
+import java.util.Arrays;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * @author: Dennis
@@ -8,30 +7,46 @@ import java.util.regex.Pattern;
  */
 
 public class Main2 {
+
+    public static int reletive_7 (int[] digit) {
+        int count = 0;
+        for (int value : digit) {
+            if (value % 7 == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void swap(int[] array,int s, int i){
+        int temp = array[s];
+        array[s] = array[i];
+        array[i] = temp;
+    }
+
+    public static void permute(int[] array,int start){
+        if (start == array.length){
+            System.out.println();
+        }
+        for (int i = start; i < array.length; i++){
+            swap(array,start,i);
+            permute(array,start+1);
+            swap(array,start,i);
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String string = scanner.nextLine();
-        String[] s = string.split(" ");
-        int [] arr = new int[s.length];
-        for (int i = 0; i < s.length; i++){
-            arr[i] = Integer.parseInt(s[i]);
+        String s = scanner.nextLine();
+        String[] str = s.split(",");
+        int[] array = new int[str.length];
+        for (int i = 0; i < str.length; i++) {
+            array[i] = Integer.parseInt(str[i]);
         }
-
-        int x1 = arr[0];
-        int x2 = arr[1];
-        int x3 = arr[2];
-        int x4 = arr[3];
-        int y1 = arr[4];
-        int y2 = arr[5];
-        int y3 = arr[6];
-        int y4 = arr[7];
-
-        if ((x3 - x1) > (y3-y1)){
-            System.out.println(1);
-        }
-
-
+        permute(array,0);
+        reletive_7(array);
 
 
     }
+
 }
