@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author: Dennis
@@ -8,45 +7,37 @@ import java.util.Scanner;
 
 public class Main2 {
 
-    public static int reletive_7 (int[] digit) {
-        int count = 0;
-        for (int value : digit) {
-            if (value % 7 == 0) {
-                count++;
+    public String PrintMinNumber(Integer [] s) {
+        if(s==null){
+            return null;
+        }
+
+        String s1="";
+        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(s));
+//        for(int i=0;i<s.length;i++){
+//             list.add(s[i]);
+//        }
+
+        Collections.sort(list,new Comparator<Integer>(){//数组里的数两两组合比较，按照比较值更得的顺序升序排序
+            @Override
+            public int compare(Integer str1, Integer str2){
+                String s1=str1+""+str2;
+                String s2=str2+""+str1;
+                return s1.compareTo(s2);//变成-s1.compareTo(s2)就是降序排序了
             }
+        });
+        for(int j:list){
+            System.out.println("输出为:"+j);
+            s1 += j;
         }
-        return count;
-    }
-
-    public static void swap(int[] array,int s, int i){
-        int temp = array[s];
-        array[s] = array[i];
-        array[i] = temp;
-    }
-
-    public static void permute(int[] array,int start){
-        if (start == array.length){
-            System.out.println();
-        }
-        for (int i = start; i < array.length; i++){
-            swap(array,start,i);
-            permute(array,start+1);
-            swap(array,start,i);
-        }
+        return s1;
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
-        String[] str = s.split(",");
-        int[] array = new int[str.length];
-        for (int i = 0; i < str.length; i++) {
-            array[i] = Integer.parseInt(str[i]);
-        }
-        permute(array,0);
-        reletive_7(array);
 
-
+        Integer [] list={3,32,321};
+        Main2 demo=new Main2();
+        System.out.println(demo.PrintMinNumber(list));
     }
 
 }
