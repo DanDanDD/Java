@@ -17,7 +17,7 @@ public class LeetCode130 {
                 continue;
             }
             // O 附近的 不为*和X都进行DFS
-            if (board[ni][nj] != '*' && board[ni][nj] != 'X'){
+            if (board[ni][nj] == 'O'){
                 DFS(board,row,column,ni,nj);
             }
         }
@@ -45,7 +45,7 @@ public class LeetCode130 {
             if (board[0][j] == 'O') {  // 第一行
                 DFS(board,row,column,0,j);
             }
-            if (board[row -1 ][j] == 'O'){  // 第一列
+            if (board[row -1 ][j] == 'O'){  // 最后一行
                 DFS(board,row,column,row-1,j);
             }
         }
@@ -62,3 +62,6 @@ public class LeetCode130 {
 
     }
 }
+
+
+

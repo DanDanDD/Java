@@ -18,18 +18,18 @@ class Employee {
 public class LeetCode690 {
     public int DFS(Map<Integer, Employee> employeeMap, int id) {
         Employee curE = employeeMap.get(id);
-        int curSum = curE.importance;
-        for (int curId : curE.subordinates) {
-            curSum += DFS(employeeMap, curId);
+        int result = curE.importance;
+        for (int curId : curE.subordinates){
+            result += DFS(employeeMap,curId);
         }
-        return curSum;
+        return result;
     }
 
     public int getImportance(List<Employee> employees, int id) {
-        if (employees.isEmpty()) {
+        if(employees.isEmpty()){
             return 0;
         }
-        Map<Integer, Employee> employeeMap = new HashMap<>();
+        Map<Integer,Employee> employeeMap = new HashMap<>();
         for (Employee e : employees){
             employeeMap.put(e.id,e);
         }
