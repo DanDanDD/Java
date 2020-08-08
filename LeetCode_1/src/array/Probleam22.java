@@ -10,16 +10,16 @@ import java.util.Collections;
  */
 
 public class Probleam22 {
-    public void Swap(char[] str, int i, int j){
+    public static void Swap(char[] str, int i, int j){
         char temp = str[i];
         str[i] = str[j];
         str[j] = temp;
     }
-    public boolean isExist(ArrayList<String> result, char[] str){
+    public static boolean isExist(ArrayList<String> result, char[] str){
         return result.contains(String.valueOf(str));
     }
 
-    public void PermutationHelper(char[] str, int start, ArrayList<String> result){
+    public static void PermutationHelper(char[] str, int start, ArrayList<String> result){
 
         if (start == str.length-1){
             // 去重
@@ -36,12 +36,18 @@ public class Probleam22 {
     }
 
 
-    public ArrayList<String> Permutation(String str) {
+    public static ArrayList<String> Permutation(String str) {
         ArrayList<String> result = new ArrayList<>();
         if (str != null && str.length() > 0){
             PermutationHelper(str.toCharArray(),0,result);
             Collections.sort(result);
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        for (String string : Permutation("abc")){
+            System.out.println(string);
+        }
     }
 }
