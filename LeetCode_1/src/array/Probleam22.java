@@ -1,7 +1,9 @@
 package array;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Iterator;
 
 
 /**
@@ -41,6 +43,7 @@ public class Probleam22 {
         if (str != null && str.length() > 0){
             PermutationHelper(str.toCharArray(),0,result);
             Collections.sort(result);
+
         }
         return result;
     }
