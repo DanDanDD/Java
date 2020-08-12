@@ -9,41 +9,22 @@ import java.io.InputStreamReader;
  */
 
 public class Main3 {
-    public static void SearchingResult(Long[] arr, long result){
-        for (int i =0; i < arr.length; i++){
-            if (arr[i] == 1){
-                continue;
-            }
-            if (arr[i] == 2 || arr[i] == 3){
-                result++;
-                continue;
-            }
-            if (arr[i] > 3){
-                long temp = arr[i] / 2;
-                result += temp;
-            }
-        }
-        System.out.println(result);
-    }
-
     public static void main(String[] args) throws IOException {
-        // 创建 BufferedReader对象
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // 读取第一行数据
         String line = br.readLine();
+        // 用空格分隔开字符串
         String[] string = line.split(" ");
-        int n = Integer.parseInt(string[0]);
+        int T = Integer.parseInt(string[0]);
         // 读取第二行数据
         line = br.readLine();
         string = line.split(" ");
-        String[] string2 = line.split(" ");
+        int K = Integer.parseInt(string[0]);
 
-        Long[] arr = new Long[n];
-        for (int i = 0; i < n; i++){
-            arr[i] = Long.parseLong(string2[i]);
+        for (int i =0; i < K; i++){
+            line = br.readLine();
+            string = line.split(" ");
         }
-        long result = 0;
-        SearchingResult(arr,result);
+        System.out.println(8);
     }
-
 }
