@@ -5,6 +5,7 @@ package linkedlist;
  * @date: 2020/7/23 13:05
  */
 
+
 public class Problem16 {
     public ListNode deleteDuplication(ListNode pHead){
         if (pHead == null){
