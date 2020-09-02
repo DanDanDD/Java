@@ -10,6 +10,8 @@ public class LeetCode26 {
         if (nums.length == 0){
             return 0;
         }
+        // i为慢指针   j为快指针
+        // 数组首部存放无重复的元素
         int i = 0;
         for (int j = 0; j < nums.length; j++) {
             if (nums[i] != nums[j]){
